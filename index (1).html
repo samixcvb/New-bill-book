@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billing System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="navbar">
+    <h1>Billing System</h1>
+    <button id="settingsBtn" class="settings-button">⚙️ Settings</button>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div id="content">
+      <h2>Welcome to Billing System</h2>
+      <p>Select an option from Settings to get started.</p>
+    </div>
+  </div>
+
+  <!-- Settings Modal -->
+  <div id="settingsModal" class="modal">
+    <div class="modal-content">
+      <span id="closeSettings" class="close">&times;</span>
+      <h2>Settings</h2>
+      <ul>
+        <li><button onclick="loadPage('add-party.html')">Add Party</button></li>
+        <li><button onclick="loadPage('reports.html')">Reports</button></li>
+        <li><button onclick="loadPage('item-details.html')">Item Details</button></li>
+        <li><button onclick="loadPage('stock-summary.html')">Stock Summary</button></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
